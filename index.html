@@ -32,7 +32,7 @@
         <div class="text-container">
           <h1>SPEEKS</h1>
         </div>
-        <button class="viw-all">VIEW ALL</button>
+        <button class="viw-all" id="openModal">FIND YOUR SIZE</button>
         <button class="watch-now">Watch now</button>
       </div>
       <div class="second-sec">
@@ -58,5 +58,24 @@
         </div>
       </div>
     </section>
+
+    <div id="sizeModalOverlay">
+      <iframe src="findSize.html" frameborder="0"></iframe>
+      <button id="closeModal">Close</button>
+    </div>
+
+    <script>
+      const openSizeModalButton = document.getElementById("openModal");
+      const closeSizeModalButton = document.getElementById("closeModal");
+      const sizeModalOverlay = document.getElementById("sizeModalOverlay");
+
+      openSizeModalButton.addEventListener("click", () => {
+        sizeModalOverlay.style.display = "block";
+      });
+
+      closeSizeModalButton.addEventListener("click", () => {
+        sizeModalOverlay.style.display = "none";
+      });
+    </script>
   </body>
 </html>

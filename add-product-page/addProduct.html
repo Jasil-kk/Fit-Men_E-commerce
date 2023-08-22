@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Product Page</title>
+    <link rel="stylesheet" href="/tailor-add-page/tailorAdd.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li class="active"><a href="">ADD PRODUCT</a></li>
+        <li><a href="">ADD TAILOR</a></li>
+      </ul>
+      <img class="avatar-image" src="/assets/avatar.svg" alt="" />
+    </header>
+
+    <section class="tailor_section">
+      <div class="addTailor_container">
+        <h1 class="addTailor_heading">ADD PRODUCT</h1>
+        <form action="">
+          <label class="addTailor_labelText" for="">Title</label>
+          <input
+            class="addTailor_textInput"
+            type="text"
+            placeholder="Enter the product title"
+          />
+          <label class="addTailor_labelText" for="">Size</label>
+          <input
+            class="addTailor_textInput"
+            type="text"
+            placeholder="Enter the size"
+          /><label class="addTailor_labelText" for="">Price</label>
+          <input
+            class="addTailor_textInput"
+            type="text"
+            placeholder="Enter product price"
+          /><label class="addTailor_labelText" for=""
+            >Add 4 Images of your product</label
+          >
+          <input class="addTailor_textInput" type="file" placeholder="Tailor" />
+          <button class="addTailor_addButton">Upload Product</button>
+        </form>
+      </div>
+      <div class="divider_line"></div>
+      <div class="removeTailer_container">
+        <h1 class="addTailor_heading">REMOVE PRODUCTS</h1>
+        <div class="removeTailer_card_container">
+          <div class="removeTailer_card">
+            <img class="delete_icon" src="/assets/delete.svg" alt="delete" />
+            <div class="product_image_container">
+              <img src="/assets/product.png" alt="product" />
+            </div>
+            <h5 class="removeTailer_card_nameText">Blue denim cotton jean</h5>
+            <div class="removeTailer_card_content">
+              <label class="removeTailer_card_label" for="">Size :</label>
+              <span class="removeTailer_card_span">M</span>
+            </div>
+            <h5 class="removeTailer_card_nameText">$10.70</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

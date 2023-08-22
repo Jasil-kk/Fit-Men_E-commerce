@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailor Add Page</title>
+    <link rel="stylesheet" href="tailorAdd.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ADD PRODUCT</a></li>
+        <li class="active"><a href="">ADD TAILOR</a></li>
+      </ul>
+      <img class="avatar-image" src="/assets/avatar.svg" alt="" />
+    </header>
+
+    <section class="tailor_section">
+      <div class="addTailor_container">
+        <h1 class="addTailor_heading">ADD TAILOR</h1>
+        <form action="">
+          <label class="addTailor_labelText" for="">Name</label>
+          <input
+            class="addTailor_textInput"
+            type="text"
+            placeholder="Enter tailor’s phone number"
+          />
+          <label class="addTailor_labelText" for="">Username</label>
+          <input
+            class="addTailor_textInput"
+            type="text"
+            placeholder="Set tailor’s username"
+          /><label class="addTailor_labelText" for="">Password</label>
+          <input
+            class="addTailor_textInput"
+            type="text"
+            placeholder="Set tailor’s password"
+          /><label class="addTailor_labelText" for="">Role</label>
+          <input class="addTailor_textInput" type="text" placeholder="Tailor" />
+          <button class="addTailor_addButton">Add Tailor</button>
+        </form>
+      </div>
+      <div class="divider_line"></div>
+      <div class="removeTailer_container">
+        <h1 class="addTailor_heading">REMOVE TAILOR</h1>
+        <div class="removeTailer_card_container">
+          <div class="removeTailer_card">
+            <img class="delete_icon" src="/assets/delete.svg" alt="delete" />
+            <h5 class="removeTailer_card_nameText">Blue denim cotton jean</h5>
+            <div class="removeTailer_card_content">
+              <label class="removeTailer_card_label" for="">Phone :</label>
+              <span class="removeTailer_card_span">+91 9876 34 5678</span>
+            </div>
+            <div class="removeTailer_card_content">
+              <label class="removeTailer_card_label" for="">Username :</label>
+              <span class="removeTailer_card_span">hardik</span>
+            </div>
+            <div class="removeTailer_card_content">
+              <label class="removeTailer_card_label" for="">Password :</label>
+              <span class="removeTailer_card_span">hardik</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
